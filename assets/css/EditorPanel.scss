@@ -1,0 +1,72 @@
+.editor-panel {
+  border: 1px solid #d2d2d2;
+  border-radius: 1px;
+  margin-bottom: 13px; }
+  .editor-panel .header {
+    border-bottom: 1px solid #d2d2d2;
+    overflow-y: auto;
+    background-color: #ffffff; }
+  .editor-panel .actions {
+    float: right; }
+  .editor-panel .status {
+    float: left;
+    padding-top: 9px;
+    padding-left: 13px;
+    font-size: 13px; }
+    .editor-panel .status.connected {
+      color: #28a745; }
+    .editor-panel .status.not-connected {
+      color: #dc3545; }
+    .editor-panel .status.reconnecting {
+      color: #17a2b8; }
+    .editor-panel .status .status-icon {
+      margin-right: 3px;
+      font-size: 9px;
+      vertical-align: middle; }
+    .editor-panel .status .status-text {
+      vertical-align: middle; }
+  .editor-panel .action {
+    padding: 8px 10px;
+    display: inline-block;
+    border-left: 1px solid #d2d2d2;
+    color: #d4d4d4;
+    -webkit-transition: color 0.2s ease-out;
+    -o-transition: color 0.2s ease-out;
+    transition: color 0.2s ease-out; }
+    .editor-panel .action.actionable {
+      color: #333333;
+      -webkit-transition: color 0.2s ease-in;
+      -o-transition: color 0.2s ease-in;
+      transition: color 0.2s ease-in; }
+    .editor-panel .action:not(.actionable) {
+      cursor: default; }
+    .editor-panel .action.actionable:hover {
+      background: #f7f7f7; }
+
+.action-list {
+  list-style: none; }
+
+.action-list .action {
+  display: inline-block; }
+
+.btn-dgraph {
+  border: 1px solid #d2d1d1;
+  background-color: white;
+  color: #8a8a8a; }
+
+.editor-radio {
+  padding: 5px;
+  background: #f3f3f3; }
+  .editor-radio .editor-label {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-align: center;
+        align-items: center;
+    margin-bottom: 0px; }
+  .editor-radio .editor-type {
+    margin: 0px 5px; }
+
+
+
+// WEBPACK FOOTER //
+// ./src/assets/css/EditorPanel.scss

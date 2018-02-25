@@ -1,0 +1,101 @@
+.sidebar-container {
+  -ms-flex: 0 1;
+      flex: 0 1;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  display: -ms-flexbox;
+  display: flex; }
+
+.sidebar-menu {
+  -ms-flex: 0 1;
+      flex: 0 1;
+  background-color: #292929; }
+  .sidebar-menu ul {
+    list-style: none;
+    padding-left: 0;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%; }
+  .sidebar-menu li {
+    width: 78px;
+    text-align: center;
+    font-size: 29px;
+    border-bottom: 1px solid #505050; }
+  .sidebar-menu li.flex-expand {
+    -ms-flex: 1 1;
+        flex: 1 1; }
+  .sidebar-menu li:not(.flex-expand):hover {
+    background-color: #353836; }
+  .sidebar-menu li a {
+    color: #a9a9a9;
+    padding: 19px 0;
+    display: block;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    user-drag: none; }
+  .sidebar-menu li a.active {
+    background: #3c3c3c; }
+  .sidebar-menu .logo {
+    width: 52px;
+    -webkit-transition: -webkit-transform 200ms;
+    transition: -webkit-transform 200ms;
+    -o-transition: transform 200ms;
+    transition: transform 200ms;
+    transition: transform 200ms, -webkit-transform 200ms;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    user-drag: none; }
+    .sidebar-menu .logo.rotate {
+      -webkit-transform: rotate(720deg);
+          -ms-transform: rotate(720deg);
+              transform: rotate(720deg); }
+
+.sidebar-content {
+  -ms-flex: auto;
+      flex: auto;
+  width: 280px;
+  -webkit-transition: all 130ms cubic-bezier(0.175, 0.885, 0.335, 1.05);
+  -o-transition: all 130ms cubic-bezier(0.175, 0.885, 0.335, 1.05);
+  transition: all 130ms cubic-bezier(0.175, 0.885, 0.335, 1.05);
+  background: #3c3c3c;
+  color: white;
+  position: relative; }
+  .sidebar-content.open {
+    padding: 0px 16px; }
+  .sidebar-content a {
+    color: white;
+    text-decoration: underline; }
+  .sidebar-content h3 {
+    font-size: 14px; }
+
+.sidebar-content:not(.open) {
+  width: 0; }
+
+.sidebar-help .link-icon {
+  margin-right: 7px;
+  vertical-align: middle; }
+
+.sidebar-help .who-made-this {
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+  right: 0;
+  text-align: center; }
+  .sidebar-help .who-made-this .who {
+    padding: 0 8px; }
+  .sidebar-help .who-made-this .team-link {
+    margin-left: 4px; }
+
+.sidebar-help section {
+  padding: 7px 0; }
+
+
+
+// WEBPACK FOOTER //
+// ./src/assets/css/Sidebar.scss
